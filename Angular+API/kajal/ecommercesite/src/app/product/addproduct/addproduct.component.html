@@ -1,0 +1,39 @@
+<p>addproduct works!</p>
+<h2 class="bg-light mb-2 text-center">Add New Product</h2>
+<form (submit)="addProduct(addProductForm)" #addProductForm="ngForm" style="border: 5px solid #1b0679; padding: 10px;" >
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer02">Product Type</label>
+        <input type="text" class="form-control"   placeholder="Enter here" required name="product_type" id="product_type" ngModel>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationServer03">Product Description</label>
+        <textarea type="text" class="form-control" placeholder="Enter here" required name="product_description" id="product_description" ngModel >
+        </textarea>
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">Product Brand</label>
+        <input type="text" class="form-control" placeholder="Enter here" name="product_brand" id="product_brand" ngModel>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">Product Name</label>
+        <input type="text" class="form-control"required placeholder="Enter here" name="product_name" id="product_name" ngModel>
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationServer01">Product Quantity</label>
+          <input type="text" class="form-control" placeholder="Enter here" name="product_quantity" id="product_quantity" ngModel>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="validationServer01">Product price</label>
+          <input type="text" class="form-control" placeholder="Enter here" name="product_price" id="product_price" ngModel>
+        </div>
+      </div>
+      <!-- <div class="form-row">
+        
+      </div> -->
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </form>

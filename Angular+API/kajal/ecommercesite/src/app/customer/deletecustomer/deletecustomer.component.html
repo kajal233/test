@@ -1,0 +1,19 @@
+<p>deletecustomer works!</p>
+<h2 class="bg-light mb-2 text-center">Delate Customer</h2>
+
+    
+<form (submit)="deletecustomer(deleteCutomerForm)" #deleteCutomerForm="ngForm" style="border: 5px solid #1b0679; padding: 10px;" >
+    <div class="form-row">
+      <div class="col-md-6 mb-3">
+        <label for="validationServer02">CustomerName</label>
+        <input type="text" class="form-control"   placeholder="Enter Name" required name="Name" id="Name" ngModel>
+      </div>
+      
+      <div class="col-md-6 mb-3">
+        <label for="validationServer01">Email id</label>
+        <input type="text" class="form-control"required placeholder="Enter email id" name="emailid" id="emailid" ngModel>
+      </div>
+    </div>
+    
+    <button class="btn btn-primary" type="submit">Delete customer</button>
+  </form>
